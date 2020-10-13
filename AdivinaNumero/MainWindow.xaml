@@ -1,0 +1,18 @@
+﻿<Window x:Class="AdivinaNumero.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdivinaNumero"
+        mc:Ignorable="d"
+        Title="Adivina el número" Height="170" Width="480" Icon="images/128.ico">
+    <Grid>
+        <Button x:Name="comprobarButton" Content="Comprobar" HorizontalAlignment="Left" Margin="33,87,0,0" VerticalAlignment="Top" Width="120" Click="ComprobarButton_Click" Height="24"/>
+        <Button x:Name="reiniciarButton" Content="Reiniciar" HorizontalAlignment="Left" Margin="167,87,0,0" VerticalAlignment="Top" Width="120" Click="ReiniciarButton_Click" Height="24"/>
+        <TextBlock x:Name="pedirNumeroTextBlock" HorizontalAlignment="Left" Margin="24,40,0,0" TextWrapping="Wrap" Text="¿Que número he pensado?" VerticalAlignment="Top"/>
+        <TextBox x:Name="numeroTextBox" HorizontalAlignment="Left" Height="23" Margin="184,33,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBlock x:Name="respuestaTextBlock" HorizontalAlignment="Left" Margin="320,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="7.147,-6.827">
+        </TextBlock>
+
+    </Grid>
+</Window>
